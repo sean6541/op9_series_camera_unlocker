@@ -1,0 +1,8 @@
+id=op9_series_camera_unlocker
+name=OnePlus 9 Series Camera Unlocker v2
+version=v2.0
+versionCode=20
+author=Sean Olson
+description=Unlocks AUX cameras, face detection, and full resolution (48MP main and 50MP ultrawide) RAW on the OnePlus 9 series.
+minMagisk=20400
+updateJson=https://raw.githubusercontent.com/sean6541/op9_series_camera_unlocker/master/update.json
