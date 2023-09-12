@@ -31,10 +31,10 @@ if [[ -f "/vendor/etc/camera/camxoverridesettings.txt" ]]; then
   cp "$MODDIR/tmp/fullres_disabled.txt" "$MODDIR/tmp/fullres_enabled.txt" || exit 1
   reset_camx_setting "overrideForceSensorMode" "0" || exit 1
   reset_camx_setting "exposeFullSizeForQCFA" "TRUE" || exit 1
-  reset_camx_setting "useFeatureForQCFA" "0" || exit 1
+  reset_camx_setting "useFeatureForQCFA" "6" || exit 1
 else
   touch "$MODDIR/tmp/fullres_disabled.txt" || exit 1
-  printf "overrideForceSensorMode=0\nexposeFullSizeForQCFA=TRUE\nuseFeatureForQCFA=0\n" > "$MODDIR/tmp/fullres_enabled.txt" || exit 1
+  printf "overrideForceSensorMode=0\nexposeFullSizeForQCFA=TRUE\nuseFeatureForQCFA=6\n" > "$MODDIR/tmp/fullres_enabled.txt" || exit 1
 fi
 cp "$MODDIR/tmp/fullres_disabled.txt" "$MODDIR/system/vendor/etc/camera/camxoverridesettings.txt" || exit 1
 chcon u:object_r:vendor_configs_file:s0 "$MODDIR/system/vendor/etc/camera/camxoverridesettings.txt" || exit 1
