@@ -2,8 +2,10 @@
 
 Magisk module that unlocks AUX cameras, face detection, and full resolution (48MP main and 50MP ultrawide) RAW on the OnePlus 9 series. Should work on all versions of OOS and any custom ROMs using OOS vendor FW. Full resolution only works in GCAM. Stock camera appears to still work.
 
+**IMPORTANT: This module includes the functionality of my (sean6541) "OnePlus 9 (Pro) Aux Cameras Enabler" and "OnePlus 9 Series Full Resolution Unlocker" modules along with shadowstep's "OnePlus 9 & 9 Pro Camera Unlocker" module. YOU MUST UNINSTALL THESE MODULES OR THEY WILL CONFLICT AND IT MAY NOT WORK CORRECTLY!**
 
-## **IMPORTANT: How To Use It**
+
+## IMPORTANT: How To Use It
 
 1. Download latest op9_series_camera_unlocker.zip from releases page: [https://github.com/sean6541/op9_series_camera_unlocker/releases](https://github.com/sean6541/op9_series_camera_unlocker/releases)
 2. Go to Magisk Manager -> Modules and click on "Install from storage". Choose Downloads/op9_series_camera_unlocker.zip
