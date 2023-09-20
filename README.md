@@ -10,7 +10,7 @@ Magisk module that unlocks AUX cameras, face detection, and full resolution (48M
 1. Download latest op9_series_camera_unlocker.zip from releases page: [https://github.com/sean6541/op9_series_camera_unlocker/releases](https://github.com/sean6541/op9_series_camera_unlocker/releases)
 2. Go to Magisk Manager -> Modules and click on "Install from storage". Choose Downloads/op9_series_camera_unlocker.zip
 3. Reboot. Note that after any reboot, full resolution is disabled. AUX cameras and face detection are always unlocked.
-4. If you want to use full resolution, download and install my custom app: [FullResToggle.apk](https://github.com/sean6541/op9_series_camera_unlocker/releases/download/v2.0/FullResToggle.apk). This app will not show up anywhere, all it does is create a quick settings tile labeled "Full Resolution". Add this new tile to your quick settings. Tap it to enable/disable full resolution. Wait approximately 10 seconds after toggling it before opening any camera apps.
+4. If you want to use full resolution, download and install my custom app: [FullResToggle.apk](https://github.com/sean6541/op9_series_camera_unlocker/releases/download/v2.0/FullResToggle.apk). This app will not show up anywhere, all it does is create a quick settings tile labeled "Full Resolution". Add this new tile to your quick settings. Tap it to enable/disable full resolution. Wait approximately 10 seconds after toggling it before opening any camera apps. You will also need a GCAM and XML that are tuned for full resolution. You can find some listed below under [GCAMs And XMLs Compatible With Full Resolution](#gcams-and-xmls-compatible-with-full-resolution).
 
 Why do we have to enable and disable full resolution? Because the only way to get it working is to force the camera sensors to output the full resolution stream. This means that third party camera (and camcorder) apps are also getting the full resolution stream, which is filled with noise and artifacts that only a properly tuned GCAM can eliminate. The front camera also doesn't work and video is limited to 30fps when full resolution is enabled.
 
@@ -23,6 +23,6 @@ Why do we have to enable and disable full resolution? Because the only way to ge
 ## For Developers And Advanced Users
 
 You can enable, disable, and check the status of full resolution by entering the following into a terminal:
-- `su -c enable_fullres.sh` to enable full resolution.
-- `su -c disable_fullres.sh` to disable full resolution.
+- `su -c enable_fullres.sh` to enable full resolution. Wait approximately 10 seconds before opening any camera apps.
+- `su -c disable_fullres.sh` to disable full resolution. Wait approximately 10 seconds before opening any camera apps.
 - `su -c fullres_status.sh` to check whether full resolution is enabled or disabled. Exit code `200` indicates that it is enabled while exit code `201` indicates disabled.
