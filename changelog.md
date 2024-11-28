@@ -1,3 +1,7 @@
+### v2.1
+
+Adjusted parameters to possibly slightly improve fullres quality.
+
 ### v2.0
 
 Now unlocks aux cameras, face detection, and full resolution! No selectors necessary!
